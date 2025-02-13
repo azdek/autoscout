@@ -95,7 +95,7 @@ function App() {
       </header>
       <section className="max-w-screen-lg xl:max-w-screen-xl mx-auto">
         <div className="sm:flex sm:space-x-6 space-y-4 sm:space-y-0 items-center">
-          <a href="tel:+996704252040">
+          <a href="https://wa.me/996704252040">
             <Button>Написать на WA</Button>
           </a>
         </div>
