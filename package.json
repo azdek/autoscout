@@ -3,7 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "description": "Автомобили из Южной Кореи",
-  "homepage": "https://github.com/azdek/autoscout#readme",
+  "homepage": "https://azdek.github.com/autoscout",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/azdek/autoscout.git"
