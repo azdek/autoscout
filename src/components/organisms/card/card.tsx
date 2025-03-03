@@ -4,23 +4,22 @@ import {
   RefAttributes,
   ForwardRefExoticComponent,
   SVGProps,
-} from "react";
+} from 'react'
 
 export interface CardProps
-  extends Omit<ComponentProps<"div">, "className" | "children"> {
-  title: string;
-  description: string;
+  extends Omit<ComponentProps<'div'>, 'className' | 'children'> {
+  title: string
+  description: string
   Icon: ForwardRefExoticComponent<
-    Omit<SVGProps<SVGSVGElement>, "ref"> & {
-      title?: string | undefined;
-      titleId?: string | undefined;
+    Omit<SVGProps<SVGSVGElement>, 'ref'> & {
+      title?: string | undefined
+      titleId?: string | undefined
     } & RefAttributes<SVGSVGElement>
-  >;
-  href: string;
+  >
 }
 
 const Card = forwardRef<HTMLDivElement, CardProps>(
-  ({ title, description, Icon, href, ...rest }, ref) => {
+  ({ title, description, Icon, ...rest }, ref) => {
     return (
       <div
         ref={ref}
@@ -28,27 +27,19 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
         {...rest}
       >
         <div>
-          <span className="absolute right-3 bottom-3 flex items-center justify-center rounded-md opacity-10">
-            <Icon className="h-12 w-12 text-white" aria-hidden="true" />
+          <span className="absolute right-3 bottom-3 flex items-center justify-center rounded-md opacity-50">
+            <Icon className="h-12 w-12 text-[#128c7e]" aria-hidden="true" />
           </span>
         </div>
         <div className="flex flex-col h-full">
-          <h3 className="text-2xl font-bold text-blue-500">{title}</h3>
-          <p className="mt-2 text-base text-gray-300 flex-1">{description}</p>
-          <div className="pt-6">
-            <a
-              href={href}
-              target="_blank"
-              rel="noreferrer"
-              className="text-white font-bold transition tracking-wide hover:text-blue-400"
-            >
-              Visit documentation →
-            </a>
-          </div>
+          <h3 className="text-2xl font-bold text-[#128c7e]">{title}</h3>
+          <p className="mt-2 text-base text-gray-300 flex-1 max-w-[80%]">
+            {description}
+          </p>
         </div>
       </div>
-    );
-  }
-);
+    )
+  },
+)
 
-export default Card;
+export default Card
