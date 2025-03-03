@@ -1,10 +1,7 @@
-import { useState } from 'react'
-
-// «» –
 const dataList = [
   {
     text: 'Спасибо за Hyundai Sonata! Всё честно, на связи 24/7. Машина в идеале!',
-    author: 'Айбек , Бишкек',
+    author: 'Айбек, Бишкек',
   },
   {
     text: 'Получили машину, Kia Sportage. Доставили быстро, все отлично! Огромное спасибо Ильгизу, autoscout_kg. Отличные парни!',
@@ -12,7 +9,7 @@ const dataList = [
   },
   {
     text: 'Стала обладательницей Kia Morning. Очень рада, что обратилась в @autoscout_kg! Безумно благодарна Ильгизу за оперативную доставку и отличную работу!',
-    author: 'Виктория , Бишкек',
+    author: 'Виктория, Бишкек',
   },
   {
     text: 'Выгодно приобрела автомобиль Kia Stonic на аукционе, не ожидала что так быстро приедет! Спасибо Ильгизу и всей вашей команде!',
@@ -21,22 +18,16 @@ const dataList = [
 ]
 
 const Carousel = () => {
-  const [currendIdx, setCurrentIdx] = useState(0)
-
   return (
-    <div
-      id="default-carousel"
-      className="relative w-full flex gap-4 overflow-x-auto"
-      data-carousel="slide"
-    >
+    <div className="relative w-full flex gap-4 overflow-x-auto">
       {dataList.map((item, idx) => (
         <div
-          className="flex flex-col gap-2 max-w-md min-w-[280px] w-full bg-[#bfdbfe] p-5 rounded-md mt-8 shadow-md hover:scale-105 hover:duration-150 duration-150"
+          className="flex flex-col gap-2 max-w-md min-w-[280px] w-full bg-[#bfdbfe] p-5 rounded-md shadow-md"
           data-carousel-item={idx}
           key={idx}
         >
-          <p className="text-xl">{item.author}</p>
-          <h3 className="text-xl font-bold">{item.text}</h3>
+          <h4 className="text-md font-bold">«{item.text}»</h4>
+          <p className="text-md">– {item.author}</p>
         </div>
       ))}
     </div>
