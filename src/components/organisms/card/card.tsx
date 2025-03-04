@@ -28,11 +28,11 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
       >
         <div>
           <span className="absolute right-3 bottom-3 flex items-center justify-center rounded-md opacity-50">
-            <Icon className="h-12 w-12 text-[#128c7e]" aria-hidden="true" />
+            <Icon className="h-12 w-12 text-[#c94b2f]" aria-hidden="true" />
           </span>
         </div>
         <div className="flex flex-col h-full">
-          <h3 className="text-2xl font-bold text-[#128c7e]">{title}</h3>
+          <h3 className="text-2xl font-bold text-[#c94b2f]">{title}</h3>
           <p className="mt-2 text-base text-gray-300 flex-1 max-w-[80%]">
             {description}
           </p>

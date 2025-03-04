@@ -9,6 +9,8 @@ import {
 import Button from 'components/atoms/button'
 import Carousel from 'components/organisms/carousel'
 
+import LogoSrc from 'assets/logo.png'
+
 const features = [
   {
     name: 'Поиск',
@@ -50,7 +52,12 @@ function App() {
   return (
     <main>
       <header className="pt-16 z-10 relative max-w-screen-lg xl:max-w-screen-xl mx-auto">
-        <h1 className="text-4xl lg:text-6xl leading-none font-extrabold tracking-tight mb-8 sm:mb-10 text-purple-400">
+        <img
+          src={LogoSrc}
+          alt=""
+          className="w-[300px] h-[100px] object-cover mb-4"
+        />
+        <h1 className="text-4xl lg:text-6xl leading-none font-extrabold tracking-tight mb-8 sm:mb-10 text-[#c94b2f]">
           Автомобили из Южной Кореи
         </h1>
         <div className="text-lg sm:text-xl leading-none font-bold tracking-tight text-[gold] mb-4">
@@ -79,7 +86,7 @@ function App() {
       <br />
 
       <section className="max-w-screen-lg xl:max-w-screen-xl mx-auto">
-        <h3 className="text-3xl leading-none font-bold tracking-tight text-purple-200 mb-4">
+        <h3 className="text-3xl leading-none font-bold tracking-tight text-[#c94b2f] mb-4">
           Чек-лист для подбора автомобиля!
         </h3>
         <ul className="space-y-1 text-gray-300 list-disc list-inside dark:text-gray-300 ml-4">
@@ -101,7 +108,7 @@ function App() {
       <br />
 
       <section className="max-w-screen-lg xl:max-w-screen-xl mx-auto">
-        <h3 className="text-3xl leading-none font-bold tracking-tight text-purple-200 mb-4">
+        <h3 className="text-3xl leading-none font-bold tracking-tight text-[#c94b2f] mb-4">
           Как мы работаем – 4 простых шага к вашему автомобилю
         </h3>
         <div className="grid grid-cols-10 gap-4">
@@ -119,7 +126,7 @@ function App() {
       <br />
 
       <section className="max-w-screen-lg xl:max-w-screen-xl mx-auto">
-        <h3 className="text-3xl leading-none font-bold tracking-tight text-purple-200 mb-4">
+        <h3 className="text-3xl leading-none font-bold tracking-tight text-[#c94b2f] mb-4">
           Отзывы наших довольных клиентов
         </h3>
 
