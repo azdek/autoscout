@@ -4,12 +4,12 @@
   viewBox="0 0 2481.000000 2482.000000" preserveAspectRatio="xMidYMid meet">
   <style>
     .cls {
-      fill: #000;
+      fill: #c94b2f;
     }
 
     @media (prefers-color-scheme: dark) {
       .cls {
-        fill: #fff;
+        fill: #c94b2f;
       }
     }
   </style>
